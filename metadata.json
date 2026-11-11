@@ -1,0 +1,6 @@
+{
+  "name": "Zee Collection - Luxury Modest Fashion",
+  "description": "Exclusive women's modest couture, handcrafted abayas, silk kaftans, and occasionwear by Zee Collection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zee Collection - Luxury Modest Fashion</title>
+    <meta name="description" content="Exclusive women's modest couture, handcrafted abayas, silk kaftans, and occasionwear by Zee Collection." />
+    <meta property="og:title" content="Zee Collection - Luxury Modest Fashion" />
+    <meta property="og:description" content="Exclusive women's modest couture, handcrafted abayas, silk kaftans, and occasionwear by Zee Collection." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Announcement & Demo Bar -->
+    <aside class="announcement-bar" role="complementary" aria-label="Store Announcement">
+      <div class="announcement-content">
+        <span class="demo-pill">Client Demo</span>
+        <span>Enjoy <strong>10% off</strong> your first order with code <strong>ZEE10</strong></span>
+      </div>
+    </aside>
+
+    <!-- Navigation Header -->
+    <div class="navbar-wrapper">
+      <header class="navbar" id="main-navbar" role="banner">
+        <!-- Brand Wordmark -->
+        <a href="#home" class="nav-brand" aria-label="Zee Collection Home">
+          <span class="brand-title">Zee Collection</span>
+          <span class="brand-subtitle">Haute Couture Atelier</span>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-menu" role="navigation" aria-label="Main Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#shop" class="nav-link">Shop</a>
+          <a href="#lookbook" class="nav-link">Lookbook</a>
+          <a href="#about" class="nav-link">Our Story</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right Side Nav Actions -->
+        <div class="nav-actions">
+          <!-- Search trigger -->
+          <button class="nav-action-btn" id="btn-nav-search" title="Search Collection" aria-label="Search Collection">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Wishlist trigger -->
+          <button class="nav-action-btn" id="btn-open-wishlist" title="Saved Wishlist" aria-label="View Saved Wishlist">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="badge-count wishlist-count-badge hidden">0</span>
+          </button>
+
+          <!-- Shopping Bag trigger -->
+          <button class="nav-action-btn" id="btn-open-cart" title="Shopping Bag" aria-label="View Shopping Bag">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+              <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="badge-count cart-count-badge hidden">0</span>
+          </button>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Open Mobile Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <span class="brand-title" style="color:var(--color-ivory); font-size:1.5rem;">Zee Collection</span>
+        <button id="mobile-nav-close" style="color:var(--color-ivory); font-size:1.8rem;" aria-label="Close Mobile Navigation">&times;</button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop Collection</a>
+        <a href="#lookbook">Lookbook 2026</a>
+        <a href="#about">Our Story</a>
+        <a href="#faq">Client Questions (FAQ)</a>
+        <a href="#contact">Atelier Concierge</a>
+      </div>
+      <div style="margin-top:auto; font-size:0.75rem; color:#888;">
+        <p>Atelier Victoria Island, Lagos</p>
+        <p>Bespoke Modest Couture</p>
+      </div>
+    </div>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section" id="home" aria-label="Introduction">
+        <div class="hero-background-fx" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span>Haute Couture Collection 2026</span>
+            </div>
+            <h1 class="hero-title">
+              Timeless Elegance, <br />
+              <span>Modern Modesty.</span>
+            </h1>
+            <p class="hero-subtitle">
+              Hand-embroidered abayas, fluid 100% pure silk kaftans, and artisanal modest couture tailored for the woman of distinction.
+            </p>
+            <div class="hero-actions">
+              <a href="#shop" class="btn btn-gold">
+                <span>Explore Catalog</span>
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="#about" class="btn btn-outline-white">
+                <span>Our Story</span>
+              </a>
+            </div>
+
+            <!-- Stats strip -->
+            <div class="hero-stats">
+              <div class="hero-stat-item">
+                <span class="stat-value tabular-nums">100%</span>
+                <span class="stat-label">Pure Silk & Crepe</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-value tabular-nums">28+</span>
+                <span class="stat-label">Hours Hand-Stitching</span>
+              </div>
+              <div class="hero-stat-item">
+                <span class="stat-value tabular-nums">DHL</span>
+                <span class="stat-label">Worldwide Express</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="hero-image-card">
+              <img src="/images/hero_abaya.jpg" alt="Zee Collection Editorial Abaya Campaign" />
+              <div class="hero-image-tag">
+                <span>The Royal Obsidian Abaya</span>
+                <em>Bespoke Edition</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee Brand Strip -->
+      <section class="marquee-wrapper" aria-label="Brand Values">
+        <div class="marquee-content">
+          <div class="marquee-item"><span>✦</span> HAND-CRAFTED EMBROIDERY</div>
+          <div class="marquee-item"><span>✦</span> 100% PURE MULBERRY SILK & NIDHA</div>
+          <div class="marquee-item"><span>✦</span> BESPOKE MODEST COUTURE</div>
+          <div class="marquee-item"><span>✦</span> ARTISANAL VICTORIA ISLAND ATELIER</div>
+          <div class="marquee-item"><span>✦</span> LUXURY VELVET GIFT BOXING</div>
+          <div class="marquee-item"><span>✦</span> WORLDWIDE EXPRESS DELIVERY</div>
+          <!-- Repeated for smooth infinite loop -->
+          <div class="marquee-item"><span>✦</span> HAND-CRAFTED EMBROIDERY</div>
+          <div class="marquee-item"><span>✦</span> 100% PURE MULBERRY SILK & NIDHA</div>
+          <div class="marquee-item"><span>✦</span> BESPOKE MODEST COUTURE</div>
+          <div class="marquee-item"><span>✦</span> ARTISANAL VICTORIA ISLAND ATELIER</div>
+          <div class="marquee-item"><span>✦</span> LUXURY VELVET GIFT BOXING</div>
+          <div class="marquee-item"><span>✦</span> WORLDWIDE EXPRESS DELIVERY</div>
+        </div>
+      </section>
+
+      <!-- Featured Category Strip -->
+      <section class="categories-strip" aria-label="Featured Categories">
+        <div class="container">
+          <div class="category-cards-grid">
+            <div class="category-card" onclick="document.querySelector('[data-cat=\'abayas\']')?.click(); document.getElementById('shop')?.scrollIntoView({behavior:'smooth'});">
+              <div class="category-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 3h12l3 7-4 2-5-6-5 6-4-2 3-7z"/><path d="M6 10v11h12V10"/></svg>
+              </div>
+              <h3>Luxury Abayas</h3>
+              <p>Hand-embroidered, crepe & Nidha silhouettes</p>
+            </div>
+            <div class="category-card" onclick="document.querySelector('[data-cat=\'kaftans\']')?.click(); document.getElementById('shop')?.scrollIntoView({behavior:'smooth'});">
+              <div class="category-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 2L4 7v13l8 2 8-2V7l-8-5z"/><line x1="12" y1="22" x2="12" y2="11"/></svg>
+              </div>
+              <h3>Silk Kaftans</h3>
+              <p>Mulberry silk & Moroccan sfifa cuts</p>
+            </div>
+            <div class="category-card" onclick="document.querySelector('[data-cat=\'occasionwear\']')?.click(); document.getElementById('shop')?.scrollIntoView({behavior:'smooth'});">
+              <div class="category-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <h3>Occasionwear</h3>
+              <p>Gala doguwar riga & crystal beaded robes</p>
+            </div>
+            <div class="category-card" onclick="document.querySelector('[data-cat=\'sets\']')?.click(); document.getElementById('shop')?.scrollIntoView({behavior:'smooth'});">
+              <div class="category-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
+              <h3>Two-Piece Sets</h3>
+              <p>Palazzo pant sets & kimono coordinates</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Shop Catalog Section -->
+      <section class="shop-section" id="shop" aria-label="Shop Catalog">
+        <div class="container">
+          <div style="text-align: center;">
+            <span class="section-label">The Atelier Collection</span>
+            <h2 class="section-title">Ready-to-Wear & Bespoke</h2>
+            <p class="section-desc">
+              Filter by category, size, or price. Every garment is crafted with generous hemlines and hand-finished seam allowances.
+            </p>
+          </div>
+
+          <!-- Controls Container -->
+          <div class="shop-controls">
+            <!-- Search & Sorter -->
+            <div class="shop-controls-top">
+              <div class="search-box">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="shop-search" placeholder="Search abayas, kaftans, colors, fabrics..." aria-label="Search garments" />
+              </div>
+
+              <div class="sort-and-count">
+                <span class="product-count-label" id="product-count-label">Showing all creations</span>
+                <select class="sort-select" id="sort-products" aria-label="Sort products">
+                  <option value="featured">Featured Curations</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="name">Name (A-Z)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Category & Secondary Filter Tabs -->
+            <div class="filter-tabs-row">
+              <div class="category-pills">
+                <button class="filter-btn active" data-cat="all">All Creations</button>
+                <button class="filter-btn" data-cat="abayas">Abayas</button>
+                <button class="filter-btn" data-cat="kaftans">Silk Kaftans</button>
+                <button class="filter-btn" data-cat="occasionwear">Occasionwear</button>
+                <button class="filter-btn" data-cat="sets">Two-Piece Sets</button>
+                <button class="filter-btn" data-cat="hijabs">Hijab Sets</button>
+              </div>
+
+              <div class="secondary-filters">
+                <select class="filter-select" id="filter-size" aria-label="Filter by size">
+                  <option value="all">All Sizes</option>
+                  <option value="52">Size 52</option>
+                  <option value="54">Size 54</option>
+                  <option value="56">Size 56</option>
+                  <option value="58">Size 58</option>
+                  <option value="60">Size 60</option>
+                  <option value="S">Size S</option>
+                  <option value="M">Size M</option>
+                  <option value="L">Size L</option>
+                  <option value="XL">Size XL</option>
+                </select>
+
+                <select class="filter-select" id="filter-price" aria-label="Filter by price range">
+                  <option value="all">Any Price</option>
+                  <option value="under-60k">Under ₦60,000</option>
+                  <option value="60k-80k">₦60,000 - ₦80,000</option>
+                  <option value="above-80k">Above ₦80,000</option>
+                </select>
+
+                <button class="btn-reset-filters" id="btn-reset-filters">Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="products-grid" aria-live="polite">
+            <!-- Dynamically populated by main.ts -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Lookbook Section -->
+      <section class="lookbook-section" id="lookbook" aria-label="Editorial Lookbook">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <span class="section-label">Editorial Gallery</span>
+            <h2 class="section-title">The 2026 Lookbook</h2>
+            <p class="section-desc">
+              Glimpses into our seasonal campaign shot in sunlit architectural arcades and the quiet beauty of private sanctuaries. Click any image to view in full resolution.
+            </p>
+          </div>
+
+          <div class="lookbook-grid" id="lookbook-grid">
+            <!-- Rendered by main.ts -->
+          </div>
+        </div>
+      </section>
+
+      <!-- About / Brand Story Section -->
+      <section class="about-section" id="about" aria-label="Brand Story">
+        <div class="container about-grid">
+          <div class="about-media-stack">
+            <div class="about-image-primary">
+              <img src="/images/atelier_craft.jpg" alt="Artisans at Zee Collection Atelier" loading="lazy" />
+            </div>
+            <div class="about-quote-card">
+              <p>“Modesty is not the absence of luxury; it is luxury elevated through restraint, structure, and pure craftsmanship.”</p>
+              <span>— Zainab Sanusi, Founder & Creative Director</span>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <span class="section-label">The Atelier Heritage</span>
+            <h2 class="section-title" style="margin-bottom:0.5rem;">The Soul of Zee Collection</h2>
+            <p>
+              Founded in Victoria Island, Lagos, Zee Collection was born out of a desire for modest couture that reflects both timeless West African royal dignity and contemporary Middle Eastern craftsmanship.
+            </p>
+            <p>
+              Every garment begins with natural textiles: heavy Mulberry silks that glide over the body without clinging, structured Japanese Nidhas with rich hand-feel, and double georgette crepes that flow with every step.
+            </p>
+
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <h4>Master Embroidery</h4>
+                <p>Every bullion thread, crystal embellishment, and braided sfifa is applied by hand in limited batches.</p>
+              </div>
+              <div class="pillar-item">
+                <h4>Generous Proportions</h4>
+                <p>No scrimping on length or width. Full sweeping silhouettes designed for confidence and modest grace.</p>
+              </div>
+              <div class="pillar-item">
+                <h4>Bespoke Consultations</h4>
+                <p>Custom length adjustments and bridal party orders arranged directly with our atelier stylists.</p>
+              </div>
+              <div class="pillar-item">
+                <h4>Velvet Box Packaging</h4>
+                <p>Every delivery arrives boxed in our signature gold-embossed ivory and charcoal velvet packaging.</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="btn btn-primary">Book Atelier Appointment</a>
+              <button class="btn btn-outline open-size-guide-trigger" style="margin-left:0.75rem;">View Sizing Chart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Client Testimonials -->
+      <section class="testimonials-section" aria-label="Customer Reviews">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <span class="section-label">Private Client Reflections</span>
+            <h2 class="section-title">Worn by Discerning Women</h2>
+            <p class="section-desc">
+              From gala banquets in Abuja to diplomatic receptions in London and Dubai, see what our clientele says about the Zee Collection experience.
+            </p>
+          </div>
+
+          <div class="testimonials-grid" id="testimonials-grid">
+            <!-- Rendered by main.ts -->
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section" id="faq" aria-label="Frequently Asked Questions">
+        <div class="container faq-container">
+          <div style="text-align: center; margin-bottom: 3.5rem;">
+            <span class="section-label">Guidance & Support</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">
+              Everything you need to know regarding garment sizing, custom bespoke commissions, and demo store ordering.
+            </p>
+          </div>
+
+          <div class="faq-list" id="faq-accordion-list">
+            <!-- Rendered by main.ts -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Atelier Section -->
+      <section class="contact-section" id="contact" aria-label="Contact and Atelier">
+        <div class="container contact-grid">
+          <div class="contact-info-col">
+            <div>
+              <span class="section-label">Atelier Concierge</span>
+              <h2 class="section-title">Connect with Us</h2>
+              <p style="color:#B5B5B5; font-size:0.95rem; line-height:1.7;">
+                Whether you desire a custom bridal commission, length alteration, or private fitting in Victoria Island, our concierge team is at your disposal.
+              </p>
+            </div>
+
+            <div class="atelier-card">
+              <div class="info-item">
+                <span class="info-item-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </span>
+                <div class="info-item-text">
+                  <h5>Private Atelier</h5>
+                  <p>Plot 14B, Adeola Odeku Street, Victoria Island, Lagos, Nigeria</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-item-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </span>
+                <div class="info-item-text">
+                  <h5>Direct Concierge</h5>
+                  <p>+234 (0) 809 112 3456 · concierge@zeecollection.com</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <span class="info-item-icon">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </span>
+                <div class="info-item-text">
+                  <h5>Hours of Consultation</h5>
+                  <p>Monday – Saturday: 10:00 AM – 7:00 PM (WAT)</p>
+                </div>
+              </div>
+
+              <div style="margin-top:0.5rem;">
+                <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="width:100%;">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.634.058-1.571-.328-.867-.358-1.564-.871-2.195-1.5-.472-.472-.882-1.071-1.109-1.53-.16-.324-.176-.649.034-.93.111-.148.243-.284.365-.426.122-.142.162-.243.243-.405.081-.162.041-.304-.02-.426s-.547-1.317-.749-1.803c-.197-.472-.405-.405-.567-.405h-.486c-.162 0-.426.061-.649.304-.223.243-.852.832-.852 2.029 0 1.197.872 2.353.993 2.516.122.162 1.705 2.603 4.129 3.649.576.249 1.026.398 1.378.509.58.184 1.107.158 1.523.096.465-.07 1.428-.584 1.63-1.148.203-.564.203-1.05.142-1.148-.061-.097-.223-.158-.466-.279z"/></svg>
+                  <span>Chat on WhatsApp (Demo)</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div>
+              <h5 style="font-size:0.8rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--color-gold-light); margin-bottom:1rem;">Follow The Atelier</h5>
+              <div class="social-links-row">
+                <a href="#contact" class="social-btn" title="Instagram" aria-label="Instagram">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                </a>
+                <a href="#contact" class="social-btn" title="Pinterest" aria-label="Pinterest">
+                  <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="4" x2="12" y2="20"/><path d="M18 10a6 6 0 0 0-12 0c0 4 3 6 3 6"/></svg>
+                </a>
+                <a href="#contact" class="social-btn" title="TikTok" aria-label="TikTok">
+                  <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.24 1.07-.14 1.61.24 1.16 1.18 2.09 2.35 2.29.98.17 2.01-.1 2.74-.78.7-.63 1.08-1.56 1.07-2.51.02-4.81.01-9.63.01-14.45z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-wrapper">
+            <h3 style="font-family:var(--font-serif); font-size:1.75rem; color:var(--color-ivory); margin-bottom:0.5rem;">Atelier Message</h3>
+            <p style="font-size:0.85rem; color:#A3A3A3; margin-bottom:1.5rem;">Send a direct inquiry or commission brief to our design studio.</p>
+
+            <form id="atelier-contact-form">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" placeholder="e.g. Amina Al-Mansoor" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="amina@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Inquiry Type</label>
+                <select id="contact-subject">
+                  <option value="bespoke">Bespoke Couture & Sizing Consultation</option>
+                  <option value="bridal">Bridal Party Commission</option>
+                  <option value="order">Order & Express Shipping Inquiry</option>
+                  <option value="general">General Atelier Question</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Your Message</label>
+                <textarea id="contact-message" rows="4" placeholder="Detail your desired measurements, event date, or custom color requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold" style="width:100%; margin-top:0.5rem;">
+                <span>Send Atelier Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Bar -->
+      <section class="newsletter-section" aria-label="Newsletter">
+        <div class="container">
+          <div class="newsletter-box">
+            <span class="section-label">The Atelier Journal</span>
+            <h2 class="section-title" style="margin-bottom:0.5rem;">Join the Inner Circle</h2>
+            <p style="font-size:0.9rem; color:#555;">
+              Receive private invitations to seasonal private views, early access to new abaya drops, and complimentary styling tips.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter" />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3 class="brand-title" style="color:var(--color-ivory); margin-bottom:0.5rem;">Zee Collection</h3>
+            <span class="brand-subtitle" style="display:block; margin-bottom:1.25rem;">Haute Couture Modest Atelier</span>
+            <p style="font-size:0.85rem; line-height:1.7; color:#888; max-width:320px;">
+              Crafting Nigeria's most celebrated modest silhouettes from pure natural silks, double georgette crepes, and bespoke bullion embroidery.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Collections</h4>
+            <div class="footer-links">
+              <a href="#shop">Embroidered Abayas</a>
+              <a href="#shop">Pure Silk Kaftans</a>
+              <a href="#shop">Royal Doguwar Riga</a>
+              <a href="#shop">Two-Piece Coordinates</a>
+              <a href="#shop">Signature Chiffon Hijabs</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Client Care</h4>
+            <div class="footer-links">
+              <a href="#faq">Delivery & Returns</a>
+              <a href="#" class="open-size-guide-trigger">Atelier Size Guide</a>
+              <a href="#faq">Bespoke Alterations</a>
+              <a href="#contact">WhatsApp Concierge</a>
+              <a href="#about">Fabric Care Guide</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Atelier Hours</h4>
+            <div class="footer-links">
+              <p style="color:#BBB;">Victoria Island Atelier</p>
+              <p>Mon - Sat: 10:00 - 19:00</p>
+              <p>Private fittings by appointment</p>
+              <p style="color:var(--color-gold); margin-top:0.5rem;">Worldwide Shipping via DHL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Zee Collection. All rights reserved.</p>
+          <p class="footer-demo-disclaimer">
+            ✦ Client Demo Store — All garments, cart flows, and WhatsApp messages are mock simulations. No real payments processed.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SLIDE-IN CART DRAWER -->
+    <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+    <aside class="drawer-panel" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Bag">
+      <div class="drawer-header">
+        <h3 class="drawer-title">
+          <span>Shopping Bag</span>
+        </h3>
+        <button class="drawer-close-btn" id="btn-close-cart" aria-label="Close Shopping Bag">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="cart-drawer-items">
+        <!-- Rendered dynamically by main.ts -->
+      </div>
+
+      <div class="drawer-footer" id="cart-drawer-footer">
+        <!-- Promo code input -->
+        <div class="promo-row">
+          <input type="text" id="cart-promo-input" class="promo-input" placeholder="Promo code (e.g. ZEE10)" />
+          <button class="btn-apply-promo" id="btn-apply-promo">Apply</button>
+        </div>
+
+        <!-- Totals breakdown -->
+        <div class="cart-totals-breakdown">
+          <div class="breakdown-row">
+            <span>Bag Subtotal</span>
+            <span id="cart-subtotal" class="tabular-nums">₦0</span>
+          </div>
+          <div class="breakdown-row" id="cart-discount-row" style="display:none; color:var(--color-gold-dark);">
+            <span>Privilege Discount</span>
+            <span id="cart-discount-val" class="tabular-nums">-₦0</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Express Delivery (Nigeria)</span>
+            <span id="cart-shipping-val">Calculated at checkout</span>
+          </div>
+          <div class="breakdown-row total-row">
+            <span>Grand Total</span>
+            <span id="cart-total-val" class="tabular-nums">₦0</span>
+          </div>
+        </div>
+
+        <!-- Checkout Buttons -->
+        <button class="btn btn-gold" id="btn-checkout-whatsapp" style="width:100%;">
+          <span>Checkout via WhatsApp Concierge</span>
+        </button>
+        <button class="btn btn-primary" id="btn-checkout-standard" style="width:100%;">
+          <span>Standard Demo Checkout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- SLIDE-IN WISHLIST DRAWER -->
+    <aside class="drawer-panel" id="wishlist-drawer" role="dialog" aria-modal="true" aria-label="Wishlist">
+      <div class="drawer-header">
+        <h3 class="drawer-title">
+          <span>Saved Wishlist</span>
+        </h3>
+        <button class="drawer-close-btn" id="btn-close-wishlist" aria-label="Close Wishlist">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="wishlist-drawer-items">
+        <!-- Rendered dynamically by main.ts -->
+      </div>
+    </aside>
+
+    <!-- MODAL: PRODUCT QUICK VIEW -->
+    <div class="modal-backdrop" id="quickview-modal" role="dialog" aria-modal="true" aria-label="Product Quick View">
+      <div class="modal-window">
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+        <div id="quickview-content">
+          <!-- Populated by main.ts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: SIZE GUIDE TABLE -->
+    <div class="modal-backdrop" id="size-guide-modal" role="dialog" aria-modal="true" aria-label="Size Guide">
+      <div class="modal-window size-guide-modal">
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+        <span class="section-label">Atelier Measurements</span>
+        <h2 style="font-family:var(--font-serif); font-size:2rem; color:var(--color-charcoal); margin-bottom:0.5rem;">
+          Zee Collection Size Guide
+        </h2>
+        <p style="font-size:0.875rem; color:#6B7280; line-height:1.6;">
+          Our standard abaya sizing reflects the full shoulder-to-floor length in inches. For a floor-grazing modest drape with heels, we advise choosing one length up.
+        </p>
+
+        <div style="overflow-x:auto;">
+          <table class="size-guide-table">
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Length (In / Cm)</th>
+                <th>Recommended Height</th>
+                <th>Bust Fit (Inches)</th>
+                <th>Sleeve Length</th>
+              </tr>
+            </thead>
+            <tbody id="size-table-body">
+              <!-- Rendered by main.ts -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="background:#FAF7F2; padding:1.25rem; border-radius:6px; border-left:3px solid var(--color-gold); font-size:0.825rem; color:#4B5563; margin-top:1rem;">
+          <strong>Bespoke Tailoring Note:</strong> If your height or bust falls between sizes, our Victoria Island atelier offers complimentary hemlines and sleeve adjustments on all made-to-order garments.
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL: LOOKBOOK LIGHTBOX -->
+    <div class="modal-backdrop" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Lookbook Photo Lightbox">
+      <div class="lightbox-modal">
+        <button class="modal-close-btn" data-close-modal aria-label="Close lightbox" style="color:#FFF; background:rgba(255,255,255,0.2);">&times;</button>
+        <img id="lightbox-img" src="" alt="" />
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- MODAL: ORDER RECEIPT (DEMO) -->
+    <div class="modal-backdrop" id="order-receipt-modal" role="dialog" aria-modal="true" aria-label="Order Confirmation">
+      <div class="modal-window" style="max-width:540px; padding:2rem;">
+        <button class="modal-close-btn" data-close-modal aria-label="Close modal">&times;</button>
+        <div id="receipt-details">
+          <!-- Populated by main.ts -->
+        </div>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP FLOATING BUTTON -->
+    <button class="back-to-top-btn" id="back-to-top" title="Scroll to top" aria-label="Scroll to top">
+      <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path d="M18 15l-6-6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <!-- TOAST CONTAINER -->
+    <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+    <!-- Application Script (TypeScript compiled into main.js) -->
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
